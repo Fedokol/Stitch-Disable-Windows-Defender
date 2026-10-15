@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="600" viewBox="0 0 700 600" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="700" height="600" fill="#0f1015"/>
+
+  <!-- окно приложения -->
+  <g filter="url(#sh)">
+    <rect x="20" y="18" width="660" height="564" rx="10" fill="#1e1f26"/>
+    <!-- заголовок окна -->
+    <path d="M20 28 a10 10 0 0 1 10 -10 h640 a10 10 0 0 1 10 10 v24 h-660 z" fill="#2a2c36"/>
+    <circle cx="40" cy="35" r="5.5" fill="#ff5f57"/>
+    <circle cx="60" cy="35" r="5.5" fill="#febc2e"/>
+    <circle cx="80" cy="35" r="5.5" fill="#28c840"/>
+    <text x="350" y="39" fill="#9aa0ae" font-size="12" text-anchor="middle">Windows Defender Toggle 1.0</text>
+  </g>
+
+  <!-- шапка -->
+  <text x="42" y="86" fill="#e8e9ed" font-size="22" font-weight="bold">🛡  Microsoft Defender</text>
+  <text x="42" y="108" fill="#9aa0ae" font-size="13">Включение и отключение защиты в реальном времени</text>
+
+  <!-- карточка статуса -->
+  <rect x="42" y="124" width="616" height="118" rx="8" fill="#282a34"/>
+  <text x="58" y="152" fill="#e8735f" font-size="16" font-weight="bold">Статус: ЗАЩИТА ОТКЛЮЧЕНА</text>
+  <text x="58" y="176" fill="#9aa0ae" font-size="11">Tamper Protection: выкл</text>
+  <text x="58" y="193" fill="#9aa0ae" font-size="11">Версия продукта: 4.18.24090.11   Движок: 1.1.2400.7</text>
+  <text x="58" y="210" fill="#9aa0ae" font-size="11">Базы обновлены: 15.10.2026 8:12:33</text>
+  <text x="58" y="227" fill="#9aa0ae" font-size="11">Права администратора: есть</text>
+
+  <!-- большое состояние -->
+  <text x="46" y="266" fill="#e8735f" font-size="14">Real-time защита выключена — система не сканирует файлы.</text>
+
+  <!-- кнопки -->
+  <rect x="42" y="282" width="303" height="52" rx="7" fill="#5c3a35"/>
+  <text x="193" y="314" fill="#f0d5d0" font-size="15" font-weight="bold" text-anchor="middle">⛔  ОТКЛЮЧИТЬ защиту</text>
+
+  <rect x="355" y="282" width="303" height="52" rx="7" fill="#1e8449"/>
+  <text x="506" y="314" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">✅  ВКЛЮЧИТЬ защиту</text>
+
+  <!-- чекбокс доп. защиты -->
+  <rect x="44" y="350" width="14" height="14" rx="3" fill="#282a34" stroke="#4a90d9" stroke-width="1.5"/>
+  <path d="M46.5 357 l3 3 l6 -6" stroke="#4a90d9" stroke-width="2" fill="none"/>
+  <text x="66" y="356" fill="#9aa0ae" font-size="11">Также отключить поведенческий мониторинг, проверку скриптов,</text>
+  <text x="66" y="371" fill="#9aa0ae" font-size="11">архивов и скачанных файлов</text>
+
+  <!-- инструменты -->
+  <rect x="42" y="386" width="212" height="30" rx="6" fill="#282a34"/>
+  <text x="148" y="406" fill="#e8e9ed" font-size="11" text-anchor="middle">＋ Добавить папку в исключения</text>
+  <rect x="262" y="386" width="146" height="30" rx="6" fill="#282a34"/>
+  <text x="335" y="406" fill="#e8e9ed" font-size="11" text-anchor="middle">⟳ Обновить статус</text>
+
+  <!-- журнал -->
+  <text x="46" y="436" fill="#9aa0ae" font-size="11">Журнал</text>
+  <rect x="42" y="442" width="616" height="86" rx="6" fill="#15161c" stroke="#33364a" stroke-width="1"/>
+  <g fill="#c9d1d9" font-family="Consolas, monospace" font-size="10.5">
+    <text x="52" y="461">[11:42:03] Статус обновлён: real-time = ВЫКЛ, tamper = выкл.</text>
+    <text x="52" y="479">[11:41:58] Отключить защиту в реальном времени…</text>
+    <text x="52" y="497">[11:41:59] Защита в реальном времени: ВЫКЛ — выполнено.</text>
+    <text x="52" y="515">[11:41:59] Дополнительные компоненты защиты обновлены.</text>
+  </g>
+
+  <!-- предупреждение -->
+  <text x="46" y="552" fill="#d9a441" font-size="10.5">⚠ Отключение антивируса снижает защиту компьютера. Windows может автоматически включить</text>
+  <text x="46" y="567" fill="#d9a441" font-size="10.5">   Defender обратно через несколько минут, если активна «Защита от несанкционированного вмешательства».</text>
+</svg>
